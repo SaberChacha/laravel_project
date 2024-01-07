@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AmortizationHeaderController;
+use App\Http\Controllers\MonthlyPaymentController;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\MortgageLoanCalculatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    Route::get('/', [MortgageLoanCalculatorController::class, 'index'])->name('home');
+    Route::post('/', [MortgageLoanCalculatorController::class, 'calculate'])->name('calculate_monthly_payment');

@@ -1,0 +1,29 @@
+body {
+    background-color: whitesmoke !important;
+    height: 800px;
+}
+
+.page-component {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1% 0%;
+}
+
+.loan-calculator-form {
+    padding: 3%;
+    width: 45%;
+}
+
+.loan-calculator-form > * {
+    margin: 2% 0%;
+}
+
+.actions-container {
+    margin-top: 30px;
+}
+
+.action-btn {
+    width: 100px;
+    margin: 0% 2%;
+}
